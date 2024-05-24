@@ -5,7 +5,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-<img src="imgreadme.png" alt="FireTech logo">
+<img src="imgreadme.jpg" alt="FireTech logo">
 
 > Fire detection and prevention system for green areas using OpenCV.
 
