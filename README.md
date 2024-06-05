@@ -21,7 +21,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 To install the Firer Detector on your system, simply open Terminal in the folder you chose and import:
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+git clone https://github.com/augustotcoliveira/pythonprojects-firetech.git
 
 ```
 
