@@ -80,7 +80,6 @@ def visualizar():
         
         ret, frame = cap.read()
 
-        # Se for verdadeiro
         if ret == True:
              
             if (rgb == 1 and hsv == 0 and gray == 0):
@@ -91,14 +90,14 @@ def visualizar():
                 # Cor HSV
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-            # Rendimensionamos el video
+            # Rendimensionamos o video
             frame = imutils.resize(frame, width=640, height=600)
 
-            # Convertimos el video
+            # Convertemos o video
             im = Image.fromarray(frame)
             img = ImageTk.PhotoImage(image=im)
 
-            # Mostramos en el GUI
+            # Mostramos na janela
             lblVideo.configure(image=img)
             lblVideo.image = img
             lblVideo.after(10, visualizar)
@@ -128,7 +127,7 @@ def cores():
     Fire_Reported = 0
     global detcolor, frame, vefCores, vefEmail, Email_Status, detectou
 
-    # Activamos deteccao de cor
+    # Ativamos a deteccao de cor
     detcolor = 1
     if vefCores == False:
         vefCores = True
@@ -141,9 +140,9 @@ def cores():
     u_s = cv2.getTrackbarPos("US", "Tracking")
     u_v = cv2.getTrackbarPos("UV", "Tracking")
 
-    # Deteccao de color
+    # Deteccao de cor
     if detcolor == 1:
-        # Deteccao de color
+        # Deteccao de cor
         ret, frame = cap.read()
         
         blur = cv2.GaussianBlur(frame, (15, 15), 0)
@@ -331,7 +330,7 @@ tela.title("Dashboard FireTech")
 tela.geometry("1280x720")
 
 # Fundo
-imagemF = PhotoImage(file="Fundo.png")
+imagemF = PhotoImage(file="GUIimgs/Fundo.png")
 background = Label(image = imagemF, text = "Fundo")
 background.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 
@@ -349,41 +348,41 @@ texto3.place(x = 140, y = 100)
 
 
 # Iniciar Video
-imagemBI = PhotoImage(file="Inicio.png")
+imagemBI = PhotoImage(file="GUIimgs/Inicio.png")
 inicio = Button(tela, text="Iniciar", image=imagemBI, height="40", width="200", command=iniciar)
 inicio.place(x = 100, y = 580)
 
 # Finalizar Video
-imagemBF = PhotoImage(file="Finalizar.png")
+imagemBF = PhotoImage(file="GUIimgs/Finalizar.png")
 fin = Button(tela, text="Finalizar", image= imagemBF, height="40", width="200", command=finalizar)
 fin.place(x = 980, y = 580)
 
 # HSV
-imagemBH = PhotoImage(file="hsv.png")
+imagemBH = PhotoImage(file="GUIimgs/hsv.png")
 bhsv = Button(tela, text="HSV", image= imagemBH, height="40", width="200", command=hsvf)
 bhsv.place(x = 1000, y = 150)
 # RGB
-imagemBR = PhotoImage(file="Rgb.png")
+imagemBR = PhotoImage(file="GUIimgs/Rgb.png")
 brgb = Button(tela, text="RGB", image= imagemBR, height="40", width="200", command=rgbf)
 brgb.place(x = 1000, y = 230)
 
 # Deteccao
-imagemBC = PhotoImage(file="Deteccao.png")
+imagemBC = PhotoImage(file="GUIimgs/Deteccao.png")
 color = Button(tela, text="Colores", image= imagemBC, height="40", width="200", command=corest)
 color.place(x = 80, y = 150)
 
 # Video 1
-mediaVideo1 = PhotoImage(file="Video1.png")
+mediaVideo1 = PhotoImage(file="GUIimgs/Video1.png")
 color = Button(tela, text="Vídeo 1", image= mediaVideo1, height="40", width="200", command=setVideo1)
 color.place(x = 540, y = 430)
 
 # Video 2
-mediaVideo2 = PhotoImage(file="Video2.png")
+mediaVideo2 = PhotoImage(file="GUIimgs/Video2.png")
 color = Button(tela, text="Vídeo 2", image= mediaVideo2, height="40", width="200", command=setVideo2)
 color.place(x = 840, y = 430)
 
 # Iniciar Esp
-imagemBE = PhotoImage(file="Monitoramento.png")
+imagemBE = PhotoImage(file="GUIimgs/Monitoramento.png")
 inicio = Button(tela, text="Iniciar", image=imagemBE, height="40", width="200", command=setEsp)
 inicio.place(x = 240, y = 430)
 
