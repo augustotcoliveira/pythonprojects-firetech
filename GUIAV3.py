@@ -358,7 +358,7 @@ fin = Button(tela, text="Finalizar", image= imagemBF, height="40", width="200", 
 fin.place(x = 980, y = 580)
 
 # HSV
-imagemBH = PhotoImage(file="GUIimgs/hsv.png")
+imagemBH = PhotoImage(file="GUIimgs/Hsv.png")
 bhsv = Button(tela, text="HSV", image= imagemBH, height="40", width="200", command=hsvf)
 bhsv.place(x = 1000, y = 150)
 # RGB
