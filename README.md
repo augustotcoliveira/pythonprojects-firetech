@@ -10,7 +10,7 @@
 
 ## 💻 Requeriments
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Before you begin, check that your setup meets the following requirements:
 
 - Last update of Python language.
 - Have this libraries installed: Pillow, OpenCv, Imutils, Time, Threading, Playsound, Numpy and Urllib.
