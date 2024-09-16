@@ -323,7 +323,7 @@ tela.title("Dashboard FireTech")
 tela.geometry("1280x720")
 
 # Fundo
-imagemF = PhotoImage(file="GUI/Fundo.png")
+imagemF = PhotoImage(file="Imgs/GUI/Fundo.png")
 background = Label(image = imagemF, text = "Fundo")
 background.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 
@@ -341,41 +341,41 @@ texto3.place(x = 140, y = 100)
 
 
 # Iniciar Video
-imagemBI = PhotoImage(file="GUI/Inicio.png")
+imagemBI = PhotoImage(file="Imgs/GUI/Inicio.png")
 inicio = Button(tela, text="Iniciar", image=imagemBI, height="40", width="200", command=iniciar)
 inicio.place(x = 100, y = 580)
 
 # Finalizar Video
-imagemBF = PhotoImage(file="GUI/Finalizar.png")
+imagemBF = PhotoImage(file="Imgs/GUI/Finalizar.png")
 fin = Button(tela, text="Finalizar", image= imagemBF, height="40", width="200", command=finalizar)
 fin.place(x = 980, y = 580)
 
 # HSV
-imagemBH = PhotoImage(file="GUI/Hsv.png")
+imagemBH = PhotoImage(file="Imgs/GUI/Hsv.png")
 bhsv = Button(tela, text="HSV", image= imagemBH, height="40", width="200", command=hsvf)
 bhsv.place(x = 1000, y = 150)
 # RGB
-imagemBR = PhotoImage(file="GUI/Rgb.png")
+imagemBR = PhotoImage(file="Imgs/GUI/Rgb.png")
 brgb = Button(tela, text="RGB", image= imagemBR, height="40", width="200", command=rgbf)
 brgb.place(x = 1000, y = 230)
 
 # Deteccao
-imagemBC = PhotoImage(file="GUI/Deteccao.png")
+imagemBC = PhotoImage(file="Imgs/GUI/Deteccao.png")
 color = Button(tela, text="Colores", image= imagemBC, height="40", width="200", command=corest)
 color.place(x = 80, y = 150)
 
 # Video 1
-mediaVideo1 = PhotoImage(file="GUI/Video1.png")
+mediaVideo1 = PhotoImage(file="Imgs/GUI/Video1.png")
 color = Button(tela, text="Vídeo 1", image= mediaVideo1, height="40", width="200", command=setVideo1)
 color.place(x = 540, y = 430)
 
 # Video 2
-mediaVideo2 = PhotoImage(file="GUI/Video2.png")
+mediaVideo2 = PhotoImage(file="Imgs/GUI/Video2.png")
 color = Button(tela, text="Vídeo 2", image= mediaVideo2, height="40", width="200", command=setVideo2)
 color.place(x = 840, y = 430)
 
 # Iniciar Esp
-imagemBE = PhotoImage(file="GUI/Monitoramento.png")
+imagemBE = PhotoImage(file="Imgs/GUI/Monitoramento.png")
 inicio = Button(tela, text="Iniciar", image=imagemBE, height="40", width="200", command=setEsp)
 inicio.place(x = 240, y = 430)
 

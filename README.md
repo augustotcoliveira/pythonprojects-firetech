@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
 
-<img src="imgreadme.jpg" alt="FireTech logo">
+<img src="./Imgs/Readme/imgreadme.jpg" alt="FireTech logo">
 
 > Fire detection and prevention system for green areas using OpenCV.
 
