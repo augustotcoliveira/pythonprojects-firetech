@@ -1,8 +1,8 @@
 # Firer Detector with Python
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/top/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
 
 <img src="imgreadme.jpg" alt="FireTech logo">
 
@@ -10,7 +10,7 @@
 
 ## 💻 Requeriments
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Before you begin, check that your setup meets the following requirements:
 
 - Last update of Python language.
 - Have this libraries installed: Pillow, OpenCv, Imutils, Time, Threading, Playsound, Numpy and Urllib.
@@ -36,4 +36,8 @@ To use the system, follow the steps below:
 
 
 ## 😄 That's it
+
+Some more informations:
+  - "Monitoramento" unfortunately doesn't work in this setup. This function has been used in the past for my course final work presentation, but, if you want, you can setup and configure a new ESP32-CAM to use it.
+  - This is a project that is not finished yet. In the last few days i have been working on it to make a better version, so as soon as possible the new version will be uploaded here :)
 
