@@ -35,16 +35,14 @@ comecou = False
 def email(areaRead):
     global detectou
     if detectou == True:
-        print('comecou')
-        print('email foi')
         from email.message import EmailMessage
         import smtplib
         import ssl
         area = areaRead
 
-        email_sender = "firesender2023@gmail.com"
-        email_pass = "vgot jmho vkdc ivln"
-        email_receiver = "augustotoledo23@gmail.com"
+        email_sender = "" #set email sender
+        email_pass = "" #set email passcode
+        email_receiver = "" #set email receiver
 
         subject = 'Alerta de Incêndio'
 
@@ -142,7 +140,6 @@ def cores():
 
     # Deteccao de cor
     if detcolor == 1:
-        # Deteccao de cor
         ret, frame = cap.read()
         
         blur = cv2.GaussianBlur(frame, (15, 15), 0)
@@ -195,9 +192,8 @@ def corest():
 def iniciar():
     global cap
     # Configuramos o video inicial
-    cap = cv2.VideoCapture('video_1000.mov')
+    cap = cv2.VideoCapture('./videos2test/video_1000.mov')
     visualizar()
-    print("video 1")
 
 # funcao finalizar
 def finalizar():
@@ -211,27 +207,24 @@ def finalizar():
 def setVideo1():
     global cap, vefCores, vefEmail, area, Email_Status, detectou
     # Configuramos o video
-    cap = cv2.VideoCapture('video_1000.mov')
+    cap = cv2.VideoCapture('./videos2test/video_1000.mov')
     visualizar()
     area = 1
     Email_Status = False
     detectou = False
     if vefCores == True:
         cores()
-    print("video 1")
-    
+
 def setVideo2():
     global cap, vefCores, area, Email_Status, detectou
     # Configuramos o video
-    cap = cv2.VideoCapture('video3.mp4')
+    cap = cv2.VideoCapture('./videos2test/video3.mp4')
     visualizar()
     area = 2
     Email_Status = False
     detectou = False
     if vefCores == True:
-        cores()
-    print("video 2")
-    
+        cores()    
 
 def setVideoEsp():
     global esp
@@ -330,7 +323,7 @@ tela.title("Dashboard FireTech")
 tela.geometry("1280x720")
 
 # Fundo
-imagemF = PhotoImage(file="GUIimgs/Fundo.png")
+imagemF = PhotoImage(file="GUI/Fundo.png")
 background = Label(image = imagemF, text = "Fundo")
 background.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 
@@ -348,41 +341,41 @@ texto3.place(x = 140, y = 100)
 
 
 # Iniciar Video
-imagemBI = PhotoImage(file="GUIimgs/Inicio.png")
+imagemBI = PhotoImage(file="GUI/Inicio.png")
 inicio = Button(tela, text="Iniciar", image=imagemBI, height="40", width="200", command=iniciar)
 inicio.place(x = 100, y = 580)
 
 # Finalizar Video
-imagemBF = PhotoImage(file="GUIimgs/Finalizar.png")
+imagemBF = PhotoImage(file="GUI/Finalizar.png")
 fin = Button(tela, text="Finalizar", image= imagemBF, height="40", width="200", command=finalizar)
 fin.place(x = 980, y = 580)
 
 # HSV
-imagemBH = PhotoImage(file="GUIimgs/Hsv.png")
+imagemBH = PhotoImage(file="GUI/Hsv.png")
 bhsv = Button(tela, text="HSV", image= imagemBH, height="40", width="200", command=hsvf)
 bhsv.place(x = 1000, y = 150)
 # RGB
-imagemBR = PhotoImage(file="GUIimgs/Rgb.png")
+imagemBR = PhotoImage(file="GUI/Rgb.png")
 brgb = Button(tela, text="RGB", image= imagemBR, height="40", width="200", command=rgbf)
 brgb.place(x = 1000, y = 230)
 
 # Deteccao
-imagemBC = PhotoImage(file="GUIimgs/Deteccao.png")
+imagemBC = PhotoImage(file="GUI/Deteccao.png")
 color = Button(tela, text="Colores", image= imagemBC, height="40", width="200", command=corest)
 color.place(x = 80, y = 150)
 
 # Video 1
-mediaVideo1 = PhotoImage(file="GUIimgs/Video1.png")
+mediaVideo1 = PhotoImage(file="GUI/Video1.png")
 color = Button(tela, text="Vídeo 1", image= mediaVideo1, height="40", width="200", command=setVideo1)
 color.place(x = 540, y = 430)
 
 # Video 2
-mediaVideo2 = PhotoImage(file="GUIimgs/Video2.png")
+mediaVideo2 = PhotoImage(file="GUI/Video2.png")
 color = Button(tela, text="Vídeo 2", image= mediaVideo2, height="40", width="200", command=setVideo2)
 color.place(x = 840, y = 430)
 
 # Iniciar Esp
-imagemBE = PhotoImage(file="GUIimgs/Monitoramento.png")
+imagemBE = PhotoImage(file="GUI/Monitoramento.png")
 inicio = Button(tela, text="Iniciar", image=imagemBE, height="40", width="200", command=setEsp)
 inicio.place(x = 240, y = 430)
 
