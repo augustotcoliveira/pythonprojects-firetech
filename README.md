@@ -37,3 +37,7 @@ To use the system, follow the steps below:
 
 ## 😄 That's it
 
+Some more informations:
+  - "Monitoramento" unfortunately doesn't work in this setup. This function has been used in the past for my course final work presentation, but, if you want, you can setup and configure a new ESP32-CAM to use it.
+  - This is a project that is not finished yet. In the last few days i have been working on it to make a better version, so as soon as possible the new version will be uploaded here :)
+
