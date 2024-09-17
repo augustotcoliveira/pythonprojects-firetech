@@ -3,6 +3,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/top/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/augustotcoliveira/pythonprojects-firetech?style=for-the-badge)
+![Firer Detector](https://img.shields.io/badge/Firer%20Detector-with%20Python-blue)
 
 <img src="./Imgs/Readme/imgreadme.jpg" alt="FireTech logo">
 
